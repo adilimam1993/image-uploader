@@ -1,5 +1,5 @@
 {
-  "name": "express-es6-rest-api",
+  "name": "image-uploader",
   "version": "0.3.0",
   "description": "Starter project for an ES6 RESTful Express API",
   "main": "dist",
@@ -10,28 +10,19 @@
     "prestart": "npm run -s build",
     "test": "eslint src"
   },
-  "eslintConfig": {
-    "extends": "eslint:recommended",
-    "parserOptions": {
-      "ecmaVersion": 7,
-      "sourceType": "module"
-    },
-    "env": {
-      "node": true
-    },
-    "rules": {
-      "no-console": 0,
-      "no-unused-vars": 1
-    }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developit/express-es6-rest-api.git"
   },
-  "repository": "developit/express-es6-rest-api",
   "author": "Jason Miller <jason@developit.ca>",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.13.3",
     "compression": "^1.5.2",
     "cors": "^2.7.1",
+    "cors-prefetch-middleware": "^1.0.0",
     "express": "^4.13.3",
+    "images-upload-middleware": "^1.1.1",
     "morgan": "^1.8.0",
     "resource-router-middleware": "^0.6.0"
   },
@@ -42,5 +33,9 @@
     "babel-preset-stage-0": "^6.5.0",
     "eslint": "^3.1.1",
     "nodemon": "^1.9.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/developit/express-es6-rest-api/issues"
+  },
+  "homepage": "https://github.com/developit/express-es6-rest-api#readme"
 }
