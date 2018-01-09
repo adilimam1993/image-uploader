@@ -17,14 +17,16 @@
   "author": "Jason Miller <jason@developit.ca>",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.13.3",
+    "aws-sdk": "^2.179.0",
+    "body-parser": "^1.18.2",
     "compression": "^1.5.2",
     "cors": "^2.7.1",
     "cors-prefetch-middleware": "^1.0.0",
     "express": "^4.13.3",
     "images-upload-middleware": "^1.1.1",
     "morgan": "^1.8.0",
-    "resource-router-middleware": "^0.6.0"
+    "resource-router-middleware": "^0.6.0",
+    "s3": "^4.4.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
