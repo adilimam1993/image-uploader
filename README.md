@@ -1,1 +1,1 @@
-#s3 Image Uploader
+# AWS S3 Image Uploader
