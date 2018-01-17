@@ -11,9 +11,9 @@ app.use(bodyParser.json())
 
 app.use(corsPrefetch);
 
-app.post('/multiple', imagesUpload(
-    './static/multipleFiles',
-    'http://localhost:9090/static/multipleFiles'
+app.post('/upload', imagesUpload(
+    './static/files',
+    'http://localhost:9090/static/files'
 ));
 
 
@@ -27,7 +27,7 @@ app.post('/uploadToS3', function(req, res) {
 
         var s3 = new AWS.S3({apiVersion: '2006-03-01'});
         var uploadParams = {Bucket: 'lost-and-found-bucket', Key: '', Body: ''};
-        var file = "./static/multipleFiles/"+image;
+        var file = "./static/files/"+image;
 
         var fs = require('fs');
         var fileStream = fs.createReadStream(file);
